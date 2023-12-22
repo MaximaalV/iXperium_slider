@@ -25,18 +25,19 @@ body{
 .slider .list{
     position: absolute;
     width: fit-content;
-    height: 2000px;
+    height: 1900px;
     left: 0;
     top: 0;
     display: flex;
     transition: 1s;
     transform: translateX(0)
 }
+
 .slider .list img{
     width: 1300px;
     max-width: 100vw;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .slider .buttons{
     position: absolute;
@@ -79,8 +80,8 @@ body{
 .slider .dots li.active{
     width: 30px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1350px){
     .slider{
-        height: 100vh;
+       
     }
 }
